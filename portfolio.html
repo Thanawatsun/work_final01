@@ -1,68 +1,128 @@
 <html>
   <head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=IBM+Plex+Sans+Thai+Looped:wght@400;600&family=Noto+Sans+Thai:wght@400;600&display=swap" rel="stylesheet">
-    <title>My portfolio
-    </title>
-    <script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chonburi&family=IBM+Plex+Sans+Thai+Looped:wght@400;600&family=Noto+Sans+Thai:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&display=swap" rel="stylesheet">
+<title>My portfolio
+</title>
+<script>
   function gopage_2() {
-    document.getElementById("box_1").style.zIndex = "-1";
-    document.getElementById("box_2").style.zIndex = "3";
-    document.getElementById("box_3").style.zIndex = "2";
-
+document.getElementById("box_1").style.zIndex = "-1";
+document.getElementById("box_2").style.zIndex = "3";
+document.getElementById("box_3").style.zIndex = "2";
+document.getElementById("box_4").style.zIndex = "-2";
+document.getElementById("box_5").style.zIndex = "-2";
+document.getElementsByTagName("body")[0].style.backgroundColor = '#B9BABB';
 }
 function gopage_1() {
-    document.getElementById("box_1").style.zIndex = "3";
-    document.getElementById("box_2").style.zIndex = "2";
-    document.getElementById("box_3").style.zIndex = "1";
+document.getElementById("box_1").style.zIndex = "3";
+document.getElementById("box_2").style.zIndex = "2";
+document.getElementById("box_3").style.zIndex = "1";
+document.getElementById("box_4").style.zIndex = "-2";
+document.getElementById("box_5").style.zIndex = "-2";
+document.getElementsByTagName("body")[0].style.backgroundColor = 'white';
 }
 function gopage_3() {
-    document.getElementById("box_3").style.zIndex = "3";
-    document.getElementById("box_2").style.zIndex = "2";
-    document.getElementById("box_2").style.zIndex = "1";
+document.getElementById("box_3").style.zIndex = "3";
+document.getElementById("box_2").style.zIndex = "2";
+document.getElementById("box_2").style.zIndex = "1";
+document.getElementById("box_4").style.zIndex = "-2";
+document.getElementById("box_5").style.zIndex = "-2";
+document.getElementsByTagName("body")[0].style.backgroundColor = '#303131';
+}
+function gopage_4() {
+document.getElementById("box_3").style.zIndex = "-3";
+document.getElementById("box_2").style.zIndex = "-2";
+document.getElementById("box_2").style.zIndex = "-1";
+document.getElementById("box_4").style.zIndex = "3";
+document.getElementById("box_5").style.zIndex = "-2";
+document.getElementsByTagName("body")[0].style.backgroundColor = 'var(--grey)';
+}
+function gopage_5() {
+document.getElementById("box_3").style.zIndex = "-3";
+document.getElementById("box_2").style.zIndex = "-2";
+document.getElementById("box_2").style.zIndex = "-1";
+document.getElementById("box_4").style.zIndex = "-3";
+document.getElementById("box_5").style.zIndex = "3";
+document.getElementsByTagName("body")[0].style.backgroundColor = '#616162';
+
 }
 </script>
-    <style>
-      body{
-        background-color: azure;        
-        margin:0;
-        font-family:sans-serif;
-        
-        font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-      }
-      .allbox{
-          width: 70%;
-          height: 100%;
-          
-          position: relative;
-          margin-left: auto;
-          margin-right: auto;
-          
+<style>
+  :root{
+--grey: #979797;
+  }
+  body{
+background-color: azure;
+margin:0;
+font-family: 'IBM Plex Sans Thai', sans-serif;
+transition-property: background-color;
+transition-duration: 3s;
+  }
+.thaif{
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+}
+.text_thai{
+  text-align: center; padding: 20px; font-size: 1.5em;
+}
+  .allbox{
+  width: 70%;
+  height: 100%;
+  
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  
 
-      }
-      .box_button{
-        display: inline-block;
-        width: 20%;
-        height: 100%;
-        background-color: aliceblue;
-        position: relative;
-        box-shadow: 5px 0px 10px 1px gray;
-        
-        
-      }
-      .box_date{
-        display: inline-block;
-        width: 79%;
-          height: 100%;
-          position: relative;
-          padding: 0px;
-          margin:0px;
-          
-      }
+  }
+  .box_button{
+display: inline-block;
+width: 20%;
+height: 100%;
+background-color: aliceblue;
+position: relative;
+box-shadow: 5px 0px 10px 1px var(--grey);
+border-radius: 12px;
+animation: righttoleft 1s;
+  }
+  .box_date{
+display: inline-block;
+width: 79%;
+  height: 100%;
+  position: relative;
+  padding: 0px;
+  margin:0px;
+  box-shadow: 5px 0px 10px 1px var(--grey);
+  border-radius: 12px;
+  animation: lefttoright 1s;
+  }
+@keyframes righttoleft {
+  0%{
+    transform:translatex(-500%);}
+  100%{
+    transform:translateX(0px);
+  }
+}
+@keyframes lefttoright {
+  0%{
+    transform:translatex(500%);}
+  100%{
+    transform:translateX(0px);
+  }
+}
+button{border-radius: 12px;opacity: 0.8;}
+button:hover{box-shadow: 0 12px 16px 0 var(--grey), 0 17px 50px 0 var(--grey);
+  float: left;
+  opacity: 1;}
+button:active {
+  transform: translateY(2px)translateX(2px);
+}
 .button {
-  background-color: white;
+  background-color: #A9AAAC;
   color: black;
   width: 90%;
   height: 10%;
@@ -74,6 +134,7 @@ function gopage_3() {
   margin-right: auto;
   left: 5%;
   top:2%;
+  
 }
 img {
   width: 350px;
@@ -88,6 +149,7 @@ img {
  background-image: url(https://img.freepik.com/free-vector/diagonal-motion-lines-white-background_1017-33198.jpg?w=2000);
  background-repeat: no-repeat;
   background-size: auto;
+  border-radius: 12px;
 }
 .box_11{
   position: relative;
@@ -119,6 +181,7 @@ img {
   background-image: url(https://img.freepik.com/free-vector/gray-white-gradient-abstract-background_53876-60238.jpg?w=2000);
  background-repeat: no-repeat;
   background-size: 100% 100%;
+  border-radius: 12px;
 }
 .box_21{
   position: relative;
@@ -138,72 +201,121 @@ img {
   height: 100%;
   width: 100%;
   z-index: 1;
-  background-image: url(https://media.istockphoto.com/photos/gray-abstract-minimal-motion-backgrounds-loopable-elements-4k-picture-id1174989482?b=1&k=20&m=1174989482&s=170667a&w=0&h=ld7ukW9KTzUlJLc6c37C2xs5ESYP2wLyjxsEVCumn2s=);
+  background-image: url(https://img.freepik.com/free-vector/gray-white-gradient-abstract-background_53876-60238.jpg?w=2000);
  background-repeat: no-repeat;
-  background-size: 100% 100%;}
+  background-size: 100% 100%;
+  border-radius: 12px;}
 .box_31{
   position: relative;
   height: 50%;
   width: 100%;
   z-index: 2;
 }
+#box_4{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-image: url(https://img.freepik.com/free-vector/gray-white-gradient-abstract-background_53876-60238.jpg?w=2000);
+ background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 12px;}
+
+  #box_5{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-image: url(https://img.freepik.com/free-vector/gray-white-gradient-abstract-background_53876-60238.jpg?w=2000);
+ background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 12px;}
 </style>
   </head>
   <body>
-    <div class="allbox">
+<div class="allbox">
 
 <div class="box_button">
-<button class="button" onclick="gopage_1();">หน้าแรก</button>
-<button class="button" style="top: 14%;" onclick="gopage_2()">ความรู้ที่ได้รับใน 1 เทอม</button>
-<button class="button" style="top: 26%;" onclick="gopage_3()">การใช้เทคนิคของเว็ป</button>
+<button class="button thaif"style="font-size: 1.45em;" onclick="gopage_1();">หน้าแรก</button>
+<button class="button thaif" style="top: 26%;font-size: 1.45em;" onclick="gopage_4();">การให้กำลังใจตัวเอง</button>
+
+<button class="button thaif" style="top: 14%;font-size: 1.45em;" onclick="gopage_2()">ความรู้ที่ได้รับใน 1 เทอม</button>
+<button class="button thaif" style="top: 38%;font-size: 1.45em;" onclick="gopage_5();">ได้รับอะไรบ้างจากวิชานี้</button>
+<button class="button thaif" style="top: 50%;font-size: 1.45em;" onclick="gopage_3()">การใช้เทคนิคของเว็ป</button>
 </div>
 <div class="box_date">
   <div id="box_1">
-    <div class="box_11">
-    <p style="text-align: center; font: 3em sans-serif;">Portfolio</p>
-    <p style="text-align: center; font: 2em sans-serif;">วิชา MULTIMEDIA</p></div>
-    <div class="box_12">
+<div class="box_11">
+<p class="thaif" style="text-align: center; font-size: 3em;">Portfolio</p>
+<p class="thaif" style="text-align: center; font-size: 2em;">วิชา MULTIMEDIA</p></div>
+<div class="box_12">
   <img src="https://raw.githubusercontent.com/Thanawatsun/work_final01/main/20220526_141012.jpg" width="400" height="300" style="display: block;
   margin-left: auto;
-  margin-right: auto;">
+  margin-right: auto; border-radius: 12px; box-shadow: 5px 0px 10px 1px black;">
 </div>
 <div class="box_13">
-  <p style=" position: relative; text-align: center; font: 1.5em sans-serif;">นายธนวัฒน์ ศรีโท</p>
-  <p style=" position: relative; text-align: center; font: 1.5em sans-serif;">ปีที่ 1 64070044</p>
+  <p class="thaif" style=" position: relative; text-align: center; font-size: 1.5em;">นายธนวัฒน์ ศรีโท</p>
+  <p class="thaif" style=" position: relative; text-align: center; font-size: 1.5em;">ปีที่ 1 64070044</p>
 </div>
 </div>
 <div id="box_2">
   <div class="box_21">
-    <p style="text-align: center; font: 3em sans-serif;">ความรู้ต่างๆที่ได้มาใน 1 เทอม</p>
-    <pre style=" font: 1.7em sans-serif;"> -ใน 1 เทอมที่แล้ว ผมเขียน web ไม่เป็นเลย แต่หลังจากได้เรียนวิชานี้
-    และการต้องใช้ในวิชาต่างๆ มันทำให้ผมได้เรียนรู้และการศึกษาด้วยตัวเอง
-    ทำให้ผมมีความมั่นใจในความสามารถตัวเองในการเขียน web
-
+<p class="thaif" style="text-align: center; font-size: 3em;">ความรู้ต่างๆที่ได้มาใน 1 เทอม</p>
+<p class="thaif text_thai"> 
+-ใน 1 เทอมที่แล้ว ผมเขียน web ไม่เป็นเลย แต่หลังจากได้เรียนวิชานี้
+และการต้องใช้ในวิชาต่างๆ มันทำให้ผมได้เรียนรู้และการศึกษาด้วยตัวเอง
+ทำให้ผมมีความมั่นใจในความสามารถตัวเองในการเขียน web</p>
+<p class="thaif text_thai">
  - หลังจากได้เรียนเขียน web แล้ว ผมมีความรู้สึกว่า งานเขียน web 
-    เป็นงานที่กินเวลามาก ต้องใช้เวลา และการลองออกแบบ 
-    เพื่อให้งานออกมาดีที่สุด
+เป็นงานที่กินเวลามาก ต้องใช้เวลา และการลองออกแบบ 
+เพื่อให้งานออกมาดีที่สุด
+</p>
 
-</pre>
   </div>
   <div class="box_22">
-    <img src="https://c.tenor.com/ihS0L_QrTu8AAAAC/level-up.gif" alt="level man" style=" margin-left: auto;
-    margin-right: auto; display:block; width:50%;height:50%;">
+<img src="https://c.tenor.com/ihS0L_QrTu8AAAAC/level-up.gif" alt="level man" style=" margin-left: auto;
+margin-right: auto; display:block; width:50%;height:50%; box-shadow: 5px 0px 10px 1px gray;">
   </div>
 </div>
 
 <div id="box_3">
   <div class="box_31">
-    <p style="text-align: center; font: 3em sans-serif;">เทคนิคการเขียนเว็บ</p>
-    <pre style=" font: 1.5em sans-serif;"> - เทคนิคส่วนใหญ่ที่ใช้ในการเขียนทุกๆเว็บคือ position เพราะง่าย และจัดโครงสร้างได้ดี
-
+<p class="thaif" style="text-align: center; font-size: 3em;">เทคนิคการเขียนเว็บ</p>
+<p class="thaif text_thai"> - เทคนิคส่วนใหญ่ที่ใช้ในการเขียนทุกๆเว็บคือ position เพราะง่าย และจัดโครงสร้างได้ดี
+</p><p class="thaif text_thai">
  - ใช้ z-index ในการซ่อนข้อความ และจะใช้ onclick ในการแสดงออกมา
-
- - Portfolio</pre>
+</p><p class="thaif text_thai">
+ - ใช้อินเตอร์เน็ตในการหารูปแบบการทำงานของ JavaScript ที่เราต้องการ แล้วนำมาปรับใช้กับงาน</p>
+ <p class="thaif text_thai">
+   - ประการค่าที่เราใช้บ่อยๆเป็น var เพื่อความง่ายในการใช้งานและจดจำ
+ </p>
+ <p class="thaif text_thai">
+  - หากสามารถกำหนดความกว้าง,ยาว,สูงเป็น % ได้แนะนำให้กำหนดเป็น % เพราะจะแสดงผลบนจอเล็ก สมส่วนเหมือนจอใหญ่
+ </p>
+</div>
+</div>
+<div id="box_4">
+  <div class="box_31">
+<p class="thaif" style="text-align: center; font-size: 3em;">การให้กำลังใจตัวเอง</p>
+<p class="thaif text_thai">
+  "หากงานเสร็จไวเราก็จะได้พักไว" นี้คือสิ่งที่ผมบอกกับตัวเองมาเสมอ เพื่อให้กำลังใจตัวเองในการทำงาน
+  โดยมีรางวัลเป็นเวลาว่าง เอาไว้ทำในสิ่งที่อยากทำในสิ่งที่ตัวเองชอบ 
+</p> 
   </div>
 </div>
-
+<div id="box_5">
+  <div class="box_31">
+<p class="thaif" style="text-align: center; font-size: 3em;">ได้รับอะไรบ้างจากวิชานี้</p>
+<p class="thaif text_thai">  สิ่งที่ผมได้รับจากวิชานี้คือ การออกแบบเว็บ, การวาดภาพจาก vector, การใช้คำสั่งของ JavaScript
+  และการหาข้อมูลทางอินเตอร์เน็ต เพราะ JavaScript ทำงานได้เยอะมากเลยต้องหาข้อมูลจากอินเตอร์เน็ต
+</p>  <p class="thaif text_thai">
+  สิ่งที่ผมชอบที่สุดของวิชานี้คือ SVG เพราะการวาดภาพด้วยอุปกรณ์ต่างๆ ไม่ว่าจะเป็น path 
+  หรือ polygon มันสามารถสร้างสรรค์ภาพออกมาได้ตามใจนึก ด้วยชุดตัวเลขเท่านั้น
+</p>
+  </div>
 </div>
-    </div>
-    
+</div>
+</div>
+
   </body>
 </html>
