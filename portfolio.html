@@ -7,12 +7,26 @@
     <title>My portfolio
     </title>
     <script>
-  
+  function gopage_2() {
+    document.getElementById("box_1").style.zIndex = "-1";
+    document.getElementById("box_2").style.zIndex = "3";
+    document.getElementById("box_3").style.zIndex = "2";
+
+}
+function gopage_1() {
+    document.getElementById("box_1").style.zIndex = "3";
+    document.getElementById("box_2").style.zIndex = "2";
+    document.getElementById("box_3").style.zIndex = "1";
+}
+function gopage_3() {
+    document.getElementById("box_3").style.zIndex = "3";
+    document.getElementById("box_2").style.zIndex = "2";
+    document.getElementById("box_2").style.zIndex = "1";
+}
 </script>
     <style>
       body{
-        
-        background:#fff;
+        background-color: azure;        
         margin:0;
         font-family:sans-serif;
         
@@ -21,20 +35,20 @@
       .allbox{
           width: 70%;
           height: 100%;
-          background: yellow;
+          
           position: relative;
           margin-left: auto;
           margin-right: auto;
-          box-shadow: 5px 0px 10px 0px rgb(243, 183, 73) ;
+          
 
       }
       .box_button{
         display: inline-block;
         width: 20%;
         height: 100%;
-        background: white;
+        background-color: aliceblue;
         position: relative;
-        box-shadow: 5px 0px 10px 1px rgb(243, 183, 73) ;
+        box-shadow: 5px 0px 10px 1px gray;
         
         
       }
@@ -42,7 +56,6 @@
         display: inline-block;
         width: 79%;
           height: 100%;
-          background: yellow;
           position: relative;
           padding: 0px;
           margin:0px;
@@ -62,18 +75,134 @@
   left: 5%;
   top:2%;
 }
+img {
+  width: 350px;
+  height: 500px;
+  object-fit: cover;
+}
+#box_1{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+ background-image: url(https://img.freepik.com/free-vector/diagonal-motion-lines-white-background_1017-33198.jpg?w=2000);
+ background-repeat: no-repeat;
+  background-size: auto;
+}
+.box_11{
+  position: relative;
+  height: 20%;
+  width: 100%;
+  z-index: 2;
 
-    </style>
+
+}
+.box_12{
+  position: relative;
+  height: 50%;
+  width: 100%;
+  z-index: 2;
+
+}
+.box_13{
+  position: relative;
+  height: 0%;
+  width: 100%;
+  z-index: 2;
+  top:5%;
+}
+#box_2{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background-image: url(https://img.freepik.com/free-vector/gray-white-gradient-abstract-background_53876-60238.jpg?w=2000);
+ background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.box_21{
+  position: relative;
+  height: 50%;
+  width: 100%;
+  z-index: 2;
+
+}
+.box_22{
+  position: relative;
+  height: 50%;
+  width: 100%;
+  z-index: 2;
+}
+#box_3{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-image: url(https://media.istockphoto.com/photos/gray-abstract-minimal-motion-backgrounds-loopable-elements-4k-picture-id1174989482?b=1&k=20&m=1174989482&s=170667a&w=0&h=ld7ukW9KTzUlJLc6c37C2xs5ESYP2wLyjxsEVCumn2s=);
+ background-repeat: no-repeat;
+  background-size: 100% 100%;}
+.box_31{
+  position: relative;
+  height: 50%;
+  width: 100%;
+  z-index: 2;
+}
+</style>
   </head>
   <body>
     <div class="allbox">
 
 <div class="box_button">
-<button class="button">หน้าแรก</button>
-<button class="button" style="top: 14%;">ความรู้ที่ได้รับใน 1 เทอม</button>
-<button class="button" style="top: 26%;">การใช้เทคนิคของเว็ป</button>
+<button class="button" onclick="gopage_1();">หน้าแรก</button>
+<button class="button" style="top: 14%;" onclick="gopage_2()">ความรู้ที่ได้รับใน 1 เทอม</button>
+<button class="button" style="top: 26%;" onclick="gopage_3()">การใช้เทคนิคของเว็ป</button>
 </div>
-<div class="box_date"></div>
+<div class="box_date">
+  <div id="box_1">
+    <div class="box_11">
+    <p style="text-align: center; font: 3em sans-serif;">Portfolio</p>
+    <p style="text-align: center; font: 2em sans-serif;">วิชา MULTIMEDIA</p></div>
+    <div class="box_12">
+  <img src="https://raw.githubusercontent.com/Thanawatsun/work_final01/main/20220526_141012.jpg" width="400" height="300" style="display: block;
+  margin-left: auto;
+  margin-right: auto;">
+</div>
+<div class="box_13">
+  <p style=" position: relative; text-align: center; font: 1.5em sans-serif;">นายธนวัฒน์ ศรีโท</p>
+  <p style=" position: relative; text-align: center; font: 1.5em sans-serif;">ปีที่ 1 64070044</p>
+</div>
+</div>
+<div id="box_2">
+  <div class="box_21">
+    <p style="text-align: center; font: 3em sans-serif;">ความรู้ต่างๆที่ได้มาใน 1 เทอม</p>
+    <pre style=" font: 1.7em sans-serif;"> -ใน 1 เทอมที่แล้ว ผมเขียน web ไม่เป็นเลย แต่หลังจากได้เรียนวิชานี้
+    และการต้องใช้ในวิชาต่างๆ มันทำให้ผมได้เรียนรู้และการศึกษาด้วยตัวเอง
+    ทำให้ผมมีความมั่นใจในความสามารถตัวเองในการเขียน web
+
+ - หลังจากได้เรียนเขียน web แล้ว ผมมีความรู้สึกว่า งานเขียน web 
+    เป็นงานที่กินเวลามาก ต้องใช้เวลา และการลองออกแบบ 
+    เพื่อให้งานออกมาดีที่สุด
+
+</pre>
+  </div>
+  <div class="box_22">
+    <img src="https://c.tenor.com/ihS0L_QrTu8AAAAC/level-up.gif" alt="level man" style=" margin-left: auto;
+    margin-right: auto; display:block; width:50%;height:50%;">
+  </div>
+</div>
+
+<div id="box_3">
+  <div class="box_31">
+    <p style="text-align: center; font: 3em sans-serif;">เทคนิคการเขียนเว็บ</p>
+    <pre style=" font: 1.5em sans-serif;"> - เทคนิคส่วนใหญ่ที่ใช้ในการเขียนทุกๆเว็บคือ position เพราะง่าย และจัดโครงสร้างได้ดี
+
+ - ใช้ z-index ในการซ่อนข้อความ และจะใช้ onclick ในการแสดงออกมา
+
+ - Portfolio</pre>
+  </div>
+</div>
+
+</div>
     </div>
     
   </body>
